@@ -1,0 +1,133 @@
+
+.scWrapper {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.sidebar-container {
+    background-color: #f9f9f9;
+}
+
+.back-to-shop {
+    text-align: right;
+    color: #f93537;
+}
+
+.myCheckbox input {
+    display: none;
+}
+
+.myCheckbox span {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url("/assets/image/cache/catalog/storefront/check_bg_milk-center.png") no-repeat scroll;
+}
+
+.myCheckbox input:checked + span {
+    display: inline-block;
+    background: url("/assets/image/cache/catalog/storefront/check_bg_milk_checked-center.png") no-repeat scroll;
+}
+
+.dark-producthr {
+    border-top: 1px solid #d2d2d2;
+    margin: 0px 200px 0 200px;
+    padding: 60px;
+ }
+
+.sidebar-wrapper {
+    padding: 40px;
+}
+
+.sidebar-top-borders {
+    border-top: 1px solid #d2d2d2;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/deep/ .sidebar-top-borders[_ngcontent-c6] div[_ngcontent-c6] {
+    padding: 2px 0 !important;
+}
+
+.subtotal, .shipping, .vat  {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 0;
+    margin: 0;
+}
+
+.key {
+    font-size: 13px;
+}
+
+.value {
+    text-align: right;
+    font-size: 13px;
+    font-weight: 800px !important;
+}
+
+.total  {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 2px 0;
+}
+
+.total .key {
+    font-size: 18px !important;
+}
+.total .value {
+    font-size: 18px !important;
+}
+
+.myCheckbox {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    padding: 10px;
+}
+
+#promo-code-msg {
+    display: grid;
+    justify-content: left;
+    align-items: start;
+    font-size: 13px;
+}
+
+.sidebar-top-borders i {
+    color: #ffbd67;
+    padding-right: 30px;
+    width: 21px;
+    height: 22px;
+}
+
+.sidebar-top-borders div {
+    padding: 10px 0;
+    font-size: 13px;
+}
+
+mikl_btn {
+    font-size: 15px;
+}
+.button_base {
+    height: 40px;
+    margin-bottom: 13px;
+}
+
+.back-to-shop {
+    font-size: 13px;
+}
+
+.options-top-border {
+    border-top: 1px solid #ebebeb;
+    margin-right: 40px;
+}
+
+.desc1 {
+    padding-top: 40px;
+    font-family: "Open Sans";
+    letter-spacing: 0;
+}
+
+.desc2 {
+    font-family: "Open Sans";
+    letter-spacing: 0;    
+}

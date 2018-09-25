@@ -1,0 +1,57 @@
+    {
+        "categoryId": "12345677",
+        "categoryName": "Gadgets & Mobile Accessories",
+        "categoryImage1": "assets/image/cache/catalog/product/21-280x280.jpg",
+        "categoryImage2": "assets/image/cache/catalog/product/21-280x280.jpg",
+        "subCat": [
+            {
+                "subcatId": "24234nn234n",
+                "subcatName": "Scanners",
+                "subcatImage1": "assets/image/cache/catalog/product/21-280x280.jpg",
+                "subcatImage2": "assets/image/cache/catalog/product/21-280x280.jpg"
+            },
+            {
+                "subcatId": "24234nn234n",
+                "subcatName": "Mac",
+                "subcatImage1": "",
+                "subcatImage2": ""
+            },
+            {
+                "subcatId": "24234nn234n",
+                "subcatName": "Printers",
+                "subcatImage1": "",
+                "subcatImage2": ""
+            },
+           
+            {
+                "subcatId": "24234nn234n",
+                "subcatName": "Desktop",
+                "subcatImage1": "",
+                "subcatImage2": ""
+            },
+            {
+                "subcatId": "24234nn234n",
+                "subcatName": "Laptops & Notebook",
+                "subcatImage1": "",
+                "subcatImage2": ""
+            },
+            {
+                "subcatId": "24234nn234n",
+                "subcatName": "Components",
+                "subcatImage1": "",
+                "subcatImage2": ""
+            },
+            {
+                "subcatId": "24234nn234n",
+                "subcatName": "Cells & Tablets",
+                "subcatImage1": "",
+                "subcatImage2": ""
+            },
+            {
+                "subcatId": "24234nn234n",
+                "subcatName": "Head Phones",
+                "subcatImage1": "",
+                "subcatImage2": ""
+            }
+        ]
+    }

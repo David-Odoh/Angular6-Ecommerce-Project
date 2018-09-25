@@ -1,0 +1,59 @@
+* {
+    font-family: 'Open Sans';
+    letter-spacing: 0;
+}
+
+.outer {
+    background-color: #f5f5f5;
+}
+
+.bread-wrapper {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.title {
+    font-size: 16px; 
+    text-align: center;
+}
+
+.nav-pills {
+    width:400px;
+    display: inline-block;
+    margin-top: 38px;
+}
+
+.home, .my-account, .accounts, .img1 {
+    float: left;
+}
+
+.img1 {
+    height: 34px;
+    text-align: center;
+    padding: 12px 10px;
+    margin: 0 15px;
+}
+
+.nav-btn, .nav-btn-home {
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2) !important;
+    border-style: none;
+    font-family: "Open Sans";
+    color: #212224;
+    background-color: #f5f5f5;
+    text-align: center;
+    -moz-transform: matrix( 1.00112324502251,0,0,0.99962377416109,0,0);
+    -webkit-transform: matrix( 1.00112324502251,0,0,0.99962377416109,0,0);
+    -ms-transform: matrix( 1.00112324502251,0,0,0.99962377416109,0,0);
+}
+
+.nav-btn-home {
+    border-radius: 50%;
+    height: 34px;
+    width: 34px;
+}
+
+.nav-btn {
+border-radius: 16px;
+width: 120px;
+height: 34px;
+}

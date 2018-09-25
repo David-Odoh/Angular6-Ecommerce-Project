@@ -1,0 +1,388 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  body{
+    background:#eeeeee;
+    color: rgb(51, 51, 51);
+    line-height:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .container{
+    max-width:1920px;
+    max-height: 1800px;
+    margin-left:auto;
+    margin-right:auto;
+    color: rgb(51, 51, 51);
+    padding: .5em;
+    font-size: 16px;
+    letter-spacing: 0px !important;
+  }
+
+  ul{
+    list-style: none;
+    padding:0;
+  }
+  
+  a:link, a:visited {
+      padding: 14px 0px;
+      text-align: center; 
+      text-decoration: none;
+  }
+  
+  a:hover, a:active {
+      color: rgb(255,144,0);
+  }
+  
+  .brand{
+    text-align: center;
+  }
+  
+  .brand span{
+    color:#fff;
+  }
+  
+  .wrapper{
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2) !important;
+  }
+  
+  .otp > *{
+    padding: 1em;
+  }
+  
+  .side_cover_banner{
+    background:#c9e6ff;
+  }
+  
+  .otp{
+    background:#fff;
+    line-height:1.6;
+    padding: 20px
+  }
+  
+  /* FORM STYLES */
+  .otp form{
+    padding-top: 1em;
+  }
+  
+  .otp form p{
+    margin:0;
+  }
+  
+  .otp form .full{
+    grid-column: 1 / 3;
+  }
+  
+  .otp form button, .otp form input{
+    width:100%;
+    padding:1em;
+    margin: 15px 0px 15px 0;
+  }
+  
+  .otp_block {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-gap: 5px;
+  }
+  
+  .otp_slot {
+      display: block;
+      text-align: center;
+      font-weight: 600;
+      font-size: 14px;
+      padding: 0;
+      border-width: 2px;
+      border-color: rgb(255, 144, 0);
+      border-style: solid;
+      border-radius: 10px;
+  }
+  
+  .otp form input:focus {
+      outline-width: 0;
+      border: none;
+      border-bottom: 4px solid rgb(255, 144, 0);
+  }
+  
+  .otp form button{
+    border-radius: 10px;
+    background-image: -moz-linear-gradient( -135deg, rgb(255,144,0) 0%, rgb(255,23,23) 100%);
+    background-image: -webkit-linear-gradient( -135deg, rgb(255,144,0) 0%, rgb(255,23,23) 100%);
+    background-image: -ms-linear-gradient( -135deg, rgb(255,144,0) 0%, rgb(255,23,23) 100%);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+    border:0;
+    font-size: 15px;
+    font-family: "Open Sans";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin: 15px 15px 40px 0;
+  }
+  
+  .otp form button:hover,.otp form button:focus{
+    background:rgb(255,144,0);
+    color:#fff;
+    outline:0;
+    transition: background-color 1s ease-out;
+  }
+  
+  #sent-notice, #resend {
+      color:  rgb(255,144,0);
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+  }
+  
+  #resend:hover, #resend:focus {
+      color: rgb(44, 44, 44);
+  }
+
+  #sent-notice {
+      color: #8CBB17;
+      text-transform: uppercase;
+      padding-left: 7px;
+      /* -vendor-animation-duration: 3s;
+      -vendor-animation-delay: 2s; */
+      -ms-animation-iteration-count: infinite;
+      -o-animation-iteration-count: infinite;
+      -moz-animation-iteration-count: infinite;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+  }
+  
+  .side_cover_banner {
+    display: grid;
+      padding: 50px 0;
+      background: -moz-linear-gradient(top, rgba(255,82,0, .8) 45%,  rgba(255,8,0, .95) 100%), url('./../../../assets/image/cache/catalog/kyc/side_cover-mobile.png') no-repeat;
+      background: -webkit-linear-gradient(top, rgba(255,82,0, .8) 45%, rgba(255,8,0, .95) 100%), url('./../../../assets/image/cache/catalog/kyc/side_cover-mobile.png') no-repeat;
+      background: -o-linear-gradient(top, rgba(255,82,0, .8) 45%,  rgba(255,8,0, .95) 100%), url('./../../../assets/image/cache/catalog/kyc/side_cover-mobile.png') no-repeat;
+      background: -ms-linear-gradient(top, rgba(255,82,0, .8) 45%, rgba(255,8,0, .95) 100%), url('./../../../assets/image/cache/catalog/kyc/side_cover-mobile.png') no-repeat;
+      background: linear-gradient(to bottom, rgba(253, 80, 0, 0.8) 45%,  rgba(255,8,0, .95) 100%), url('./../../../assets/image/cache/catalog/kyc/side_cover-mobile.png') no-repeat;
+      background-size:     cover;                     
+      background-repeat:   no-repeat;
+      background-position: center center;   
+      margin: 0;
+      justify-content: center;
+      align-content: center; 
+      }
+
+      .side_cover_banner .cooper-logo {
+        font-size: 42px;
+        font-weight: 500;
+        letter-spacing: 0;
+        line-height: 1;
+      }
+  
+  #login_title {
+      display: block;
+      text-align: center;
+      font-size: 30px;
+      font-family: "Open Sans";
+      line-height: 1.2;
+      padding-bottom: 20px;
+      padding-right: 0;
+      padding-left: 0;
+  }
+  
+  .info_span {
+      display: block;
+      font-size: 12px;
+      margin-top: 0;
+      padding-top: 0;
+      margin-bottom: 20px;
+      text-align: center;
+  }
+  
+  
+  @media(min-width:430px){
+      .otp_block {
+      grid-gap: 8px;
+  }
+      
+      .otp_slot {
+      font-size: 19px;
+      border-color: rgb(255, 144, 0);
+  }
+  }
+  
+  @media(min-width:520px){
+      .otp_block {
+      grid-gap: 13px;
+  }
+      
+      .otp_slot {
+      font-size: 22px;
+      border-color: rgb(255, 144, 0);
+  }
+  }
+  
+  @media(min-width:650px){
+      .otp_block {
+      grid-gap: 25px;
+  }
+      
+      .otp_slot {
+      font-size: 27px;
+      border-color: rgb(255, 144, 0);
+  }
+  }
+  
+  @media(min-width:790px){
+      .otp_block {
+      grid-gap: 35px;
+  }
+      
+      .otp_slot {
+      font-size: 27px;
+      border-color: rgb(255, 144, 0);
+  }
+  }
+  
+  
+  /* LARGE SCREENS */
+  @media(min-width:980px){
+  body{
+    padding: 4em 8em;
+  }
+  
+    .wrapper{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  
+  .otp > *{
+      padding:4em;
+    }
+  
+    .side_cover_banner h3, .side_cover_banner ul, .brand{
+      text-align: left;
+    }
+      
+    .side_cover_banner {
+        display: grid;
+        background: -moz-linear-gradient(top, rgba(255,82,0, .8) 45%,  rgba(255,8,0, .95) 100%), url('./../../../assets/image/cache/catalog/kyc/side_cover.png') no-repeat;
+        background: -webkit-linear-gradient(top, rgba(255,82,0, .8) 45%, rgba(255,8,0, .95) 100%), url('./../../../assets/image/cache/catalog/kyc/side_cover.png') no-repeat;
+        background: -o-linear-gradient(top, rgba(255,82,0, .8) 45%,  rgba(255,8,0, .95) 100%), url('./../../../assets/image/cache/catalog/kyc/side_cover.png') no-repeat;
+        background: -ms-linear-gradient(top, rgba(255,82,0, .8) 45%, rgba(255,8,0, .95) 100%), url('./../../../assets/image/cache/catalog/kyc/side_cover.png') no-repeat;
+        background: linear-gradient(to bottom, rgba(253, 80, 0, 0.8) 45%,  rgba(255,8,0, .95) 100%), url('./../../../assets/image/cache/catalog/kyc/side_cover.png') no-repeat;
+      background-size:     cover;                     
+      background-repeat:   no-repeat;
+      background-position: center center; 
+      justify-content: center;
+      align-content: center; 
+      }
+  
+      .side_cover_banner .cooper-logo {
+        font-size: 52px;
+        font-weight: 500;
+        letter-spacing: 0;
+        line-height: 1.2;
+      }
+      
+  .otp_block {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-gap: 8px;
+  }
+      
+      .otp_slot {
+      font-size: 12px;
+      border-width: 2px;
+          padding: 0;
+      border-color: rgb(255, 144, 0);
+      border-style: solid;
+      border-radius: 10px;
+  }
+  }
+  
+  @media(min-width:1240px){
+      .otp_block {
+      grid-gap: 15px;
+  }
+      
+      .otp_slot {
+      font-size: 18px;
+      border-color: rgb(255, 144, 0);
+  }
+  }
+  
+  
+  @media(min-width:1573px){
+      .account {
+      display: grid;
+      justify-items: right;
+  }
+      .otp > *{
+      padding:8em;
+    }
+  
+  @media(min-width:790px){
+      .otp_block {
+      grid-gap: 14px;
+  }
+      
+      .otp_slot {
+      font-size: 22px;
+      border-color: rgb(255, 144, 0);
+  }
+  }
+  }
+  
+  /* Dialog Styles */
+
+  /deep/ .cdk-overlay-dark-backdrop {
+    background: rgba(255,255,255,.8);
+  }
+
+  /deep/ #cdk-overlay-0, .cdk-overlay-pane {
+    width: 450px !important;
+    height: 450px !important
+  }
+
+  /deep/ .mat-dialog-container {
+    background: #fa3022; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #fa3022 5%, #ffa35a 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #fa3022 5%,#ffa35a 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #fa3022 5%,#ffa35a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa3022', endColorstr='#ffa35a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    color: #fff;
+    text-align: center;
+    padding: 60px;
+}
+
+.gotoshp-btn {
+  border: 1px solid #fff !important;
+  border-radius: 5px !important;
+  font-style: 'Open Sans' !important;
+  font-size: 12px !important;
+  letter-spacing: 0 !important;
+  padding: 5px 0 !important;
+  margin-top: 20px !important;
+  cursor: pointer;
+}
+
+.d-mssge {
+  padding: 15px 0 !important;
+  letter-spacing: 0 !important;
+}
+
+.btn-outer {
+  padding: 0 100px !important;
+}
+
+.final-success img {
+  padding: 5px;
+  border: 4px solid #fff;
+  border-radius: 50% !important;
+  width: 70px !important;
+  height: 70px !important;
+}
+
+/* SMALL SCREENS */
+@media(max-width:559) {
+  .btn-outer {
+    padding: 0 40px !important;
+  }
+
+  
+}

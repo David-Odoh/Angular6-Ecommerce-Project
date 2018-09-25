@@ -1,0 +1,71 @@
+<body>
+  <div class="container">
+    <div class="wrapper  animated bounceInLeft">
+
+      <div class="side_cover_banner">
+        <a href="#">
+                      <span class="cooper-logo"  style="color: #fff;">
+                        C<span style="color:#fe8f01;">OO</span>PER<span style="color:#fe8f01;"> S</span>WI<span style="color:#fe8f01">T</span>CH
+                  </span>
+                </a>
+      </div>
+
+      <div class="set_password">
+        <div id="login_title">Set Transaction Pin</div>
+        <form [formGroup]="changePinForm" (submit)="changePin()">
+          <!-- Validation Message -->
+          <div *ngIf="(changePinForm.controls['pin'].errors?.required && (changePinForm.controls['pin'].touched || changePinForm.controls['pin'].dirty))"
+            class="invalid animated bounceIn">
+            Required.
+          </div>
+          <div *ngIf="(changePinForm.controls['pin'].errors?.minlength)" class="invalid animated bounceIn">
+            Minimum Length is 3.
+          </div>
+          <div *ngIf="(changePinForm.controls['pin'].valid)" class="valid animated flash">
+            OK.
+          </div>
+          <!--/End Validation Message -->
+          <p>
+            <input type="password" formControlName="pin" class="pin" placeholder="Enter PIN" id="newPass">
+          </p>
+          <!-- Validation Message -->
+          <div *ngIf="((changePinForm.controls['conPin'].touched || changePinForm.controls['conPin'].dirty))" class="invalid animated bounceIn">
+            <div *ngIf="(changePinForm.errors?.invalid)" class="invalid animated bounceIn">
+              Pins should match.
+            </div>
+          </div>
+          <div *ngIf="(changePinForm.controls['conPin'].valid && !changePinForm.errors?.invalid)" class="valid animated flash">
+            OK.
+          </div>
+          <!--/End Validation Message -->
+          <p>
+            <input type="password" formControlName="conPin" class="conPin" placeholder="Confirm PIN" id="conPass">
+          </p>
+          <p class="full">
+
+            <button type="submit" [disabled]="!changePinForm.valid" style="background-image: -moz-linear-gradient( -135deg, rgb(255,144,0) 0%, rgb(255,23,23) 100%) !important;
+            background-image: -webkit-linear-gradient( -135deg, rgb(255,144,0) 0%, rgb(255,23,23) 100%) !important;
+            background-image: -ms-linear-gradient( -135deg, rgb(255,144,0) 0%, rgb(255,23,23) 100%) !important;">
+            Finish</button>
+          </p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+<!-- Popup -->
+<!-- <ol>
+  <li>
+    <mat-form-field>
+      <input matInput [(ngModel)]="name" placeholder="What's your name?">
+    </mat-form-field>
+  </li>
+  <li>
+    <button mat-raised-button (click)="openDialog()">Pick one</button>
+  </li>
+  <li *ngIf="animal">
+    You chose: <i>{{animal}}</i>
+  </li>
+</ol> -->

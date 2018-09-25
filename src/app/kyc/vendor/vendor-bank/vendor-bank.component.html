@@ -1,0 +1,71 @@
+<body>
+    <div class="container">
+      <div class="wrapper animated bounceInLeft">
+  
+        <div class="side_cover_banner">
+          <a href="#">
+                    <span class="cooper-logo"  style="color: #fff;">
+                      C<span style="color:#fe8f01;">OO</span>PER<span style="color:#fe8f01;"> S</span>WI<span style="color:#fe8f01">T</span>CH
+                </span>
+              </a>
+        </div>
+  
+        <div class="bank_details">
+          <div id="login_title">Enter Bank Details</div>
+          <form [formGroup]="accDetailForm" (submit)="setAccountDetails()">
+            <!-- Validation Message -->
+            <div *ngIf="(accDetailForm.controls['accNumber'].errors?.required && (accDetailForm.controls['accNumber'].touched || accDetailForm.controls['accNumber'].dirty))"
+            class="invalid animated bounceIn">
+            Required.
+          </div>
+          <div *ngIf="(accDetailForm.controls['accNumber'].errors?.minlength)" class="invalid animated bounceIn">
+            Minimum Length is 3.
+          </div>
+          <div *ngIf="(accDetailForm.controls['accNumber'].valid)" class="valid animated flash">
+            OK.
+          </div>
+          <!--/End Validation Message -->
+            <p>
+              <input type="text" formControlName="accNumber" class="acc_number" placeholder="Account Number" autocomplete="new-password">
+            </p>
+            <!-- Validation Message -->
+            <div *ngIf="(accDetailForm.controls['accName'].errors?.required && (accDetailForm.controls['accName'].touched || accDetailForm.controls['accName'].dirty))"
+            class="invalid animated bounceIn">
+            Required.
+          </div>
+          <div *ngIf="(accDetailForm.controls['accName'].errors?.minlength)" class="invalid animated bounceIn">
+            Minimum Length is 3.
+          </div>
+          <div *ngIf="(accDetailForm.controls['accName'].valid)" class="valid animated flash">
+            OK.
+          </div>
+          <!--/End Validation Message -->
+            <p>
+              <input type="text" formControlName="accName" class="acc_name" placeholder="Account Name" autocomplete="new-password">
+            </p>
+             <!-- Validation Message -->
+             <div *ngIf="(accDetailForm.controls['bank'].errors?.required && (accDetailForm.controls['bank'].touched || accDetailForm.controls['bank'].dirty))"
+             class="invalid animated bounceIn">
+             Required.
+           </div>
+           <div *ngIf="(accDetailForm.controls['bank'].valid)" class="valid animated flash">
+             OK.
+           </div>
+           <!--/End Validation Message -->
+            <p>
+              <select type="text" formControlName="bank" class="bank">
+                  <option disabled selected value style="color: rgb(170, 170, 170, .5);">Select Your Bank</option>
+                  <option *ngFor="let bank of vendorBanks" [value]="bank._id">{{bank.bankName}}</option>
+              </select>
+            </p>
+            <p class="full">
+              <button type="submit" [disabled]="!accDetailForm.valid" style="background-image: -moz-linear-gradient( -135deg, rgb(255,144,0) 0%, rgb(255,23,23) 100%) !important;
+              background-image: -webkit-linear-gradient( -135deg, rgb(255,144,0) 0%, rgb(255,23,23) 100%) !important;
+              background-image: -ms-linear-gradient( -135deg, rgb(255,144,0) 0%, rgb(255,23,23) 100%) !important;">FINISH</button>
+            </p>
+          </form>
+        </div>
+  
+      </div>
+    </div>
+  </body>

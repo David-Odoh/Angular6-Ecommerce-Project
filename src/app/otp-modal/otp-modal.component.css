@@ -1,0 +1,113 @@
+* {
+    font-family: 'Open Sans';
+    letter-spacing: 0;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.modal-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 30px;
+}
+
+.inner-wrapper {
+    padding-top: 100px;
+}
+
+.card {
+    box-shadow: 0px 0px 24px 0px rgba(141, 141, 141, 0.35);
+    border-radius: 15px !important;
+}
+
+.close-btn img {
+    float: right;
+    height: 34px;
+}
+
+.dialog {
+    margin: auto;
+    width: 30%;
+    text-align: center;
+}
+
+.dwrapper {
+    display: grid;
+    padding: 40px;
+    border-radius: 15px !important;
+}
+
+.trans-pin {
+    font-size: 30px;
+    font-family: "Open Sans";
+    color: rgb(44, 44, 44);
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0;
+    margin-top: 40px;
+}
+
+.img-lock {
+    padding-top: 80px;
+}
+
+.footer {
+    display: grid;
+    align-items: center;
+    background-color: #aec900;
+    color: #fff;
+    text-transform: uppercase;
+    height: 55px;
+    text-align: center;
+    font-size: 18px;
+    border-bottom-left-radius: 15px !important;
+    border-bottom-right-radius: 15px !important;
+}
+
+.inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+/* .otp_slot {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 0;
+    border-width: 2px;
+    border-color: rgb(255, 144, 0);
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.inputs input:focus {
+    outline-width: 0;
+    border: none;
+    border-bottom: 2px solid rgb(255, 144, 0);
+} */
+
+.otp_slot {
+    margin-top: 52px;
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    border-width: 2px;
+    border-color: rgb(255, 189, 103);
+    border-style: solid;
+    border-radius: 10px;
+    opacity: 0.702;
+    width: 81px;
+    height: 93px;
+    font-size: 60px;
+    font-family: "Open Sans";
+    color: rgb(255, 189, 103);
+    line-height: 1.2;
+}

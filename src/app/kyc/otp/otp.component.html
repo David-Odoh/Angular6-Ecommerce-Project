@@ -1,0 +1,44 @@
+<body>
+  <div class="container">
+    <div class="wrapper animated bounceInLeft">
+
+      <div class="side_cover_banner">
+        <a href="#">
+                  <span class="cooper-logo"  style="color: #fff;">
+                    C<span style="color:#fe8f01;">OO</span>PER<span style="color:#fe8f01;"> S</span>WI<span style="color:#fe8f01">T</span>CH
+              </span>
+            </a>
+      </div>
+
+      <div class="otp">
+        <div id="login_title">Verify Phone Number</div>
+        <form [formGroup]="verifyOtpForm" (submit)="verifyOtp()">
+
+          <p class="otp_block">
+            <input type="text" formControlName="one" class="otp_slot inputs" maxlength="1">
+            <input type="text" formControlName="two" class="otp_slot inputs" maxlength="1">
+            <input type="text" formControlName="three" class="otp_slot inputs" maxlength="1">
+            <input type="text" formControlName="four" class="otp_slot inputs" maxlength="1">
+            <input type="text" formControlName="five" class="otp_slot inputs" maxlength="1">
+            <input type="text" formControlName="six" class="otp_slot inputs" maxlength="1">
+          </p>
+          <p>
+            <span class="info_span">
+              Please wait while we verify your phone number, once you receive 6-didgit code please enter above.
+             </span>
+          </p>
+
+          <!-- routerLink="/kyc/vendor-bank" -->
+          <p class="full">
+            <button type="submit" disable="!verifyOtpForm.valid" class="inputs" style="background-image: -moz-linear-gradient( -135deg, rgb(255,144,0) 0%, rgb(255,23,23) 100%) !important;
+            background-image: -webkit-linear-gradient( -135deg, rgb(255,144,0) 0%, rgb(255,23,23) 100%) !important;
+            background-image: -ms-linear-gradient( -135deg, rgb(255,144,0) 0%, rgb(255,23,23) 100%) !important;">Continue</button>
+          </p>
+          <span class="info_span">
+              Didn't get verification code? <a id="resend" (click)="resendOtp()" disable="!sent">Resend</a><span class="animated bounce" id="sent-notice" *ngIf="sent">Sent!</span>
+          </span>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>

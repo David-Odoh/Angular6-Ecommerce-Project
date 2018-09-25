@@ -1,0 +1,118 @@
+<body>
+  <div class="container">
+    <div class="wrapper animated bounceInLeft">
+
+      <div class="side_cover_banner">
+        <a href="#">
+              <span class="cooper-logo"  style="color: #fff;">
+                C<span style="color:#fe8f01;">OO</span>PER<span style="color:#fe8f01;"> S</span>WI<span style="color:#fe8f01">T</span>CH
+          </span>
+        </a>
+      </div>
+
+      <div class="register">
+        <div id="register_title">Let's Get Started</div>
+
+        <div class="nav">
+          <a><span class="coop inactive_tab" [class.Copactive]="Copactive" (click)="activeCooperator()">Register as Cooperator</span></a>
+          <a><span class="ven inactive_tab" [class.Venactive]="Venactive" (click)="activeVendor()">Register as Vendor</span></a>
+        </div>
+
+        <form [formGroup]="registerForm" (submit)="register()" *ngIf="userTypeId == one; else vendorForm1">
+          <!-- Validation Message -->
+          <div *ngIf="(registerForm.controls['email'].errors?.required && (registerForm.controls['email'].touched || registerForm.controls['email'].dirty))"
+            class="invalid animated bounceIn">
+            Required.
+          </div>
+          <div *ngIf="(registerForm.controls['email'].errors?.email)" class="invalid animated bounceIn">
+            Kindly enter a valid email address.
+          </div>
+          <div *ngIf="(registerForm.controls['email'].valid)" class="valid animated flash">
+            OK.
+          </div>
+          <!--/End Validation Message -->
+          <div>
+            <input type="email" formControlName="email" class="Email_Address" placeholder="Email Address" autocomplete="new-password"
+              id="email">
+          </div>
+
+            <!-- Validation Message -->
+            <div *ngIf="(registerForm.controls['coopId'].errors?.required && (registerForm.controls['coopId'].touched || registerForm.controls['coopId'].dirty))"
+              class="invalid animated bounceIn">
+              Required.
+            </div>
+            <div *ngIf="(registerForm.controls['coopId'].valid)" class="valid animated flash">
+              OK.
+            </div>
+            <!--/End Validation Message -->
+            <div>
+              <select type="text" formControlName="coopId" class="cooperativeId">
+                  <option disabled selected value style="color: rgb(170, 170, 170, .5);">Select Cooperative Id</option>
+                  <option *ngFor="let cooperative of cooperative_data" [value]="cooperative.cooperativeId">{{cooperative.cooperativeId}}</option>
+              </select>
+            </div>
+          
+          <div class="full">
+            <!--Navigate to this: routerLink="/kyc/phone-verification" -->
+            <button type="submit" [disabled]="!registerForm.valid" style="background-image: -moz-linear-gradient( -135deg, rgb(255,144,0) 0%, rgb(255,23,23) 100%) !important;
+            background-image: -webkit-linear-gradient( -135deg, rgb(255,144,0) 0%, rgb(255,23,23) 100%) !important;
+            background-image: -ms-linear-gradient( -135deg, rgb(255,144,0) 0%, rgb(255,23,23) 100%) !important;">Create Account</button>
+          </div>
+          <div class="footer_links">
+            <a routerLink="/kyc/login"><span class="already_have">Already have an account?</span></a>
+            <a routerLink="/kyc/login"><span class="login_here">Login here</span></a>
+          </div>
+        </form>
+
+        <ng-template #vendorForm1>
+        <form [formGroup]="vendorRegisterForm" (submit)="vendorRegister()">
+             <!-- Validation Message -->
+             <div *ngIf="(vendorRegisterForm.controls['vendorEmail'].errors?.required && (vendorRegisterForm.controls['vendorEmail'].touched || vendorRegisterForm.controls['vendorEmail'].dirty))"
+               class="invalid animated bounceIn">
+               Required.
+             </div>
+             <div *ngIf="(vendorRegisterForm.controls['vendorEmail'].errors?.email)" class="invalid animated bounceIn">
+               Kindly enter a valid email address.
+             </div>
+             <div *ngIf="(vendorRegisterForm.controls['vendorEmail'].valid)" class="valid animated flash">
+               OK.
+             </div>
+             <!--/End Validation Message -->
+             <div>
+               <input type="email" formControlName="vendorEmail" class="Email_Address" placeholder="Email Address" autocomplete="new-password"
+                 id="vendorEmail">
+             </div>
+             
+            <!-- Validation Message -->
+            <div *ngIf="(vendorRegisterForm.controls['businessName'].errors?.required && (vendorRegisterForm.controls['businessName'].touched || vendorRegisterForm.controls['businessName'].dirty))"
+              class="invalid animated bounceIn">
+              Required.
+            </div>
+            <div *ngIf="(vendorRegisterForm.controls['businessName'].errors?.minlength)" class="invalid animated bounceIn">
+              Minimum Length is 3.
+            </div>
+            <div *ngIf="(vendorRegisterForm.controls['businessName'].valid)" class="valid animated flash">
+              OK.
+            </div>
+            <!--/End Validation Message -->
+            <div>
+              <input type="text" formControlName="businessName" class="Business_Name" placeholder="Business Name" autocomplete="new-password"
+                id="businessName">
+            </div>
+             
+             <div class="full">
+               <!--Navigate to this: routerLink="/kyc/phone-verification" -->
+               <button type="submit" [disabled]="!vendorRegisterForm.valid" style="background-image: -moz-linear-gradient( -135deg, rgb(255,144,0) 0%, rgb(255,23,23) 100%) !important;
+               background-image: -webkit-linear-gradient( -135deg, rgb(255,144,0) 0%, rgb(255,23,23) 100%) !important;
+               background-image: -ms-linear-gradient( -135deg, rgb(255,144,0) 0%, rgb(255,23,23) 100%) !important;">Create Account</button>
+             </div>
+             <div class="footer_links">
+               <a routerLink="/kyc/login"><span class="already_have">Already have an account?</span></a>
+               <a routerLink="/kyc/login"><span class="login_here">Login here</span></a>
+             </div>
+           </form>
+          </ng-template>
+      </div>
+    </div>
+  </div>
+</body>

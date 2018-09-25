@@ -1,0 +1,94 @@
+[
+    {
+        "categoryId": "12345677",
+        "categoryName": "Electronics",
+        "categoryImage1": "assets/image/cache/catalog/product/21-280x280.jpg",
+        "categoryImage2": "assets/image/cache/catalog/product/21-280x280.jpg",
+        "subCat": [
+            {
+                "subcatId": "24234nn234n",
+                "subcatName": "Phones",
+                "subcatImage1": "assets/image/cache/catalog/product/21-280x280.jpg",
+                "subcatImage2": "assets/image/cache/catalog/product/21-280x280.jpg"
+            },
+            {
+                "subcatId": "24234nn234n",
+                "subcatName": "Phones",
+                "subcatImage1": "",
+                "subcatImage2": ""
+            },
+            {
+                "subcatId": "24234nn234n",
+                "subcatName": "Phones",
+                "subcatImage1": "",
+                "subcatImage2": ""
+            },
+            {
+                "subcatId": "24234nn234n",
+                "subcatName": "Phones",
+                "subcatImage1": "",
+                "subcatImage2": ""
+            },
+            {
+                "subcatId": "24234nn234n",
+                "subcatName": "Phones",
+                "subcatImage1": "",
+                "subcatImage2": ""
+            },
+            {
+                "subcatId": "24234nn234n",
+                "subcatName": "Phones",
+                "subcatImage1": "",
+                "subcatImage2": ""
+            },
+            {
+                "subcatId": "24234nn234n",
+                "subcatName": "Phones",
+                "subcatImage1": "",
+                "subcatImage2": ""
+            }
+        ]
+    },
+    {
+        "categoryId": "12345677",
+        "categoryName": "Women Cloths",
+        "categoryImage1": "assets/image/cache/catalog/product/29-280x280.jpg",
+        "categoryImage2": "assets/image/cache/catalog/product/1-280x280.jpg",
+        "subCat": []
+    },
+    {
+        "categoryId": "12345677",
+        "categoryName": "Women Cloths",
+        "categoryImage1": "assets/image/cache/catalog/product/18-280x280.jpg",
+        "categoryImage2": "assets/image/cache/catalog/product/8-280x280.jpg",
+        "subCat": []
+    },
+    {
+        "categoryId": "12345677",
+        "categoryName": "Women Cloths",
+        "categoryImage1": "assets/image/cache/catalog/product/27-280x280.jpg",
+        "categoryImage2": "assets/image/cache/catalog/product/30-280x280.jpg",
+        "subCat": []
+    },
+    {
+        "categoryId": "12345677",
+        "categoryName": "Women Cloths",
+        "categoryImage1": "assets/image/cache/catalog/product/24-280x280.jpg",
+        "categoryImage2": "assets/image/cache/catalog/product/15-280x280.jpg",
+        "subCat": []
+    },
+    {
+        "categoryId": "12345677",
+        "categoryName": "Women Cloths",
+        "categoryImage1": "assets/image/cache/catalog/product/17-280x280.jpg",
+        "categoryImage2": "assets/image/cache/catalog/product/7-280x280.jpg",
+        "subCat": []
+    },
+    {
+        "categoryId": "12345677",
+        "categoryName": "Women Cloths",
+        "categoryImage1": "assets/image/cache/catalog/product/30-280x280.jpg",
+        "categoryImage2": "assets/image/cache/catalog/product/27-280x280.jpg",
+        "subCat": []
+    }
+]

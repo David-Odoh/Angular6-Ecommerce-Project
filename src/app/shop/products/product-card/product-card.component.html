@@ -1,0 +1,67 @@
+<span >
+  <div class="product-layout col-xs-12" *ngIf="even">
+    <div class="product-thumb transition">
+        <div class="image">
+          <a routerLink="/shop/product-page"><img [src]="product.productImage" alt="iPhone" title="iPhone" class="img-responsive center-block" /></a>
+          <!-- Webiarch Images Start -->
+          <a routerLink="/shop/product-page"><img [src]="product.productRightImage" class="img-responsive second-img" alt="hover image"/></a>
+      
+          <!-- End -->
+          <h3 class="sale">sale</h3>
+        </div>
+        <div class="caption">
+          <h4><a href="#">{{product.productName}}</a></h4>
+      
+          <div class="price">
+            <span class="price-new">N{{product.newPrice}}</span> <span class="price-old">₦{{product.oldPrice}}</span>
+          </div>
+          <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+          </div>
+      
+          <div class="button-group">
+            <button type="button" data-toggle="tooltip" onclick="cart.add('40');" class="bcart"><span>Add to Cart</span></button>
+            <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('40');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+            <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('40');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+            <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+          </div>
+        </div>
+      </div>
+</div>
+
+<div class="product-layout col-xs-12" *ngIf="odd">
+  <div class="product-thumb transition">
+      <div class="image">
+        <a routerLink="/shop/product-page"><img [src]="product.productImage" alt="iPhone" title="iPhone" class="img-responsive center-block" /></a>
+        <!-- Webiarch Images Start -->
+        <a routerLink="/shop/product-page"><img [src]="product.productRightImage" class="img-responsive second-img" alt="hover image"/></a>
+    
+        <!-- End -->
+        <h3 class="sale">sale</h3>
+      </div>
+      <div class="caption">
+        <h4><a href="#">{{product.productName}}</a></h4>
+    
+        <div class="price">
+          <span class="price-new">N{{product.newPrice}}</span> <span class="price-old">₦{{product.oldPrice}}</span>
+        </div>
+        <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+        </div>
+    
+        <div class="button-group">
+          <button type="button" data-toggle="tooltip" onclick="cart.add('40');" class="bcart"><span>Add to Cart</span></button>
+          <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('40');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+          <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('40');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+          <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+        </div>
+      </div>
+    </div>
+</div>
+</span>

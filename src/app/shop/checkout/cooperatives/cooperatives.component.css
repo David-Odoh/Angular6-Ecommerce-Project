@@ -1,0 +1,38 @@
+.cooperative-section {
+    padding: 50px 30px 30px 30px;
+}
+
+.cooperative-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 40px;
+    grid-column-gap: 120px;
+}
+
+.active-coop {
+    border: 1px solid #ffbd67;
+    border-radius: 10px;
+    padding: 50px 30px 50px;
+}
+
+.inactive-coop { 
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    border-radius: 10px;
+    padding: 50px 30px 50px;
+}
+
+.cooperative-name span {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-new-option, .add-new-option>a {
+    padding-top: 40px;
+    font-family: "Open Sans";
+    text-align: right;
+    color: #ffbd67 !important;
+    
+}
+

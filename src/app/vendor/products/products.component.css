@@ -1,0 +1,45 @@
+* {
+    font-family: 'Open Sans';
+    letter-spacing: 0;
+    color: #333333;
+}
+
+.th-wrapper {
+    display: grid;
+    grid-template-columns: .5fr 5fr;
+}
+
+#content {
+    padding: 20px 0;
+}
+
+.card {
+    box-shadow: 0px 0px 24px 0px rgba(141, 141, 141, 0.35);
+}
+
+.dashboard {
+    padding: 20px 70px;
+}
+
+.sidebar-thumbnail {
+    background-color: #ffff !important;
+    box-shadow: 0px 0px 28px 0px rgba(44, 44, 44, 0.21);
+    width: 260px;
+    height: 230px;
+}
+
+.hint {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+.product-image, .sidebar-thumbnail {
+    position: relative;
+}
+
+.float-it {
+    position: absolute;
+    top: 200px;
+    left: 220px;
+}

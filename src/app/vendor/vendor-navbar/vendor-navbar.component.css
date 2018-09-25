@@ -1,0 +1,51 @@
+* {
+    color: #ffff;
+}
+
+.add-product {
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2) !important;
+}
+
+.add-product {
+border-radius: 16px;
+width: 120px;
+height: 34px;
+margin: 0 10px;
+font-family: "Open Sans";
+color: #ffff;
+background-color: #f81616;
+-moz-transform: matrix( 1.00112324502251,0,0,0.99962377416109,0,0);
+-webkit-transform: matrix( 1.00112324502251,0,0,0.99962377416109,0,0);
+-ms-transform: matrix( 1.00112324502251,0,0,0.99962377416109,0,0);
+border-style: none;
+}
+
+.htop {
+    background-color: #212224;
+}
+
+.fullmenu {
+    text-align: right;
+   padding: 25px 0 0;
+    margin-bottom: 0 !important;
+}
+
+.fullmenu li {
+    padding: 0 0 0 35px;
+    color: #aaaaaa;
+    text-transform:lowercase;
+    margin-right: 0;
+}
+
+/* adjusting bootstrap default column padding */
+.remove-bs-padding {
+    padding-right: 0 !important;
+    padding-left: 25px !important;
+}
+
+@media (max-width: 767px) {
+    .htop .container {
+        background-color: #212224;
+        padding-bottom: 20px;
+    }
+}

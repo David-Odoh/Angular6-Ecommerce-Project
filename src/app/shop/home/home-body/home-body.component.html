@@ -1,0 +1,1569 @@
+<!-- New Arrivals & On Sale & Best  -->
+<div class="tab-content pro-tab">
+  
+    <!-- New Arrivals & On Sale & Best Rated Tab Heads -->
+    <div class="tab-head">
+      <!-- <h1 class="pull-left hidden-xs">treding product</h1> -->
+      <ul class="nav nav-tabs text-right">
+        <li class="active fea"><a href="#new-arrival-wrapper" data-toggle="tab" (click)="setFilter('New Arrival')">New Arrivals</a></li>
+        <li class="sep"></li>
+        <li><a href="#latestp" data-toggle="tab" (click)="setFilter('On Sale')">On Sale</a></li>
+        <li class="sep"></li>
+        <li><a href="#bestRatedp" data-toggle="tab" (click)="setBestRFilter(5)">Best Rated</a></li>
+      </ul>
+    </div>
+  
+    <!-- New Arrival Tab View  -->
+    <div class="tab-pane active" id="new-arrival-wrapper">
+  
+      <div class="row">
+        <div id="new-arrival" class="owl-theme owl-carousel">
+  
+          <div class="multi-row">
+              <app-product-card *ngFor="let product of (products| filter:filterBy) | slice:0:2; let i = index; let even = even; let odd = odd"  [product]="product"  [even]="even" [odd]="odd"></app-product-card>
+          </div>
+          <div class="multi-row">
+              <app-product-card *ngFor="let product of (products| filter:filterBy) | slice:2:4; let i = index; let even = even; let odd = odd" [product]="product" [even]="even" [odd]="odd"></app-product-card>
+          </div>
+          <div class="multi-row">
+              <app-product-card *ngFor="let product of (products| filter:filterBy) | slice:4:6; let i = index; let even = even; let odd = odd" [product]="product" [even]="even" [odd]="odd"></app-product-card>
+          </div>
+          <div class="multi-row">
+              <app-product-card *ngFor="let product of (products| filter:filterBy) | slice:6:8; let i = index; let even = even; let odd = odd" [product]="product" [even]="even" [odd]="odd"></app-product-card>
+          </div>
+          <div class="multi-row">
+              <app-product-card *ngFor="let product of (products| filter:filterBy) | slice:8:10; let i = index; let even = even; let odd = odd" [product]="product" [even]="even" [odd]="odd"></app-product-card>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/End New Arrival Tab View  -->
+  
+    <!-- On Sale Tab View -->
+    <div class="tab-pane" id="latestp">
+  
+      <div class="row">
+        <div id="latest" class="owl-theme owl-carousel">
+  
+         
+        <div class="multi-row">
+            <app-product-card *ngFor="let product of (products| filter:filterBy) | slice:2:4; let i = index; let even = even; let odd = odd" [product]="product" [even]="even" [odd]="odd"></app-product-card>
+        </div>
+        <div class="multi-row">
+            <app-product-card *ngFor="let product of (products| filter:filterBy) | slice:0:2; let i = index; let even = even; let odd = odd"  [product]="product"  [even]="even" [odd]="odd"></app-product-card>
+        </div>
+        <div class="multi-row">
+            <app-product-card *ngFor="let product of (products| filter:filterBy) | slice:4:6; let i = index; let even = even; let odd = odd" [product]="product" [even]="even" [odd]="odd"></app-product-card>
+        </div>
+        
+        <div class="multi-row">
+            <app-product-card *ngFor="let product of (products| filter:filterBy) | slice:8:10; let i = index; let even = even; let odd = odd" [product]="product" [even]="even" [odd]="odd"></app-product-card>
+        </div>
+        <div class="multi-row">
+          <app-product-card *ngFor="let product of (products| filter:filterBy) | slice:6:8; let i = index; let even = even; let odd = odd" [product]="product" [even]="even" [odd]="odd"></app-product-card>
+      </div>
+        </div>
+      </div>
+  
+    </div>
+    <!--/End On Sale Tab View -->
+
+     <!-- On Sale Tab View -->
+     <div class="tab-pane" id="bestRatedp">
+          <div class="row">
+            <div id="bestRated" class="owl-theme owl-carousel">
+            <div class="multi-row">
+                <app-product-card *ngFor="let product of (products | bestRated:bestRatedFilter) | slice:2:4; let i = index; let even = even; let odd = odd" [product]="product" [even]="even" [odd]="odd"></app-product-card>
+            </div>
+            <div class="multi-row">
+                <app-product-card *ngFor="let product of (products | bestRated:bestRatedFilter) | slice:0:2; let i = index; let even = even; let odd = odd"  [product]="product"  [even]="even" [odd]="odd"></app-product-card>
+            </div>
+            <div class="multi-row">
+                <app-product-card *ngFor="let product of (products | bestRated:bestRatedFilter) | slice:4:6; let i = index; let even = even; let odd = odd" [product]="product" [even]="even" [odd]="odd"></app-product-card>
+            </div>
+            
+            <div class="multi-row">
+                <app-product-card *ngFor="let product of (products | bestRated:bestRatedFilter) | slice:8:10; let i = index; let even = even; let odd = odd" [product]="product" [even]="even" [odd]="odd"></app-product-card>
+            </div>
+            <div class="multi-row">
+              <app-product-card *ngFor="let product of (products | bestRated:bestRatedFilter) | slice:6:8; let i = index; let even = even; let odd = odd" [product]="product" [even]="even" [odd]="odd"></app-product-card>
+            </div>
+            </div>
+          </div>
+        </div>
+        <!--/End On Sale Tab View -->
+  </div>
+  
+  <!-- Just a Mid Banner -->
+  <div class="imgbanner hidden-xs">
+    <div class=" beffect">
+      <a href="#">
+            <img src="assets/image/cache/catalog/imgbanner/imgbanner-1470x260.jpg" alt="img banner" class="img-responsive" />
+          </a>
+    </div>
+  </div>
+  <!-- Just a Mid Banner -->
+  
+  <!-- To Categories This Week  -->
+  <h1 class="heading">Top Categories This Week</h1>
+  <div class="row">
+    <div id="bestseller" class="owl-theme owl-carousel">
+      <div class="product-layout col-xs-12">
+        <app-top-cat-card [topCat]="topCat" *ngFor="let topCat of topCats | slice:0:1"></app-top-cat-card>
+      </div>
+      <div class="product-layout col-xs-12">
+          <app-top-cat-card [topCat]="topCat" *ngFor="let topCat of topCats | slice:1:2"></app-top-cat-card>        
+      </div>
+      <div class="product-layout col-xs-12">
+          <app-top-cat-card [topCat]="topCat" *ngFor="let topCat of topCats | slice:2:3"></app-top-cat-card>        
+      </div>
+      <div class="product-layout col-xs-12">
+          <app-top-cat-card [topCat]="topCat" *ngFor="let topCat of topCats | slice:3:4"></app-top-cat-card>        
+      </div>
+      <div class="product-layout col-xs-12">
+          <app-top-cat-card [topCat]="topCat" *ngFor="let topCat of topCats | slice:4:5"></app-top-cat-card>        
+      </div>
+      <div class="product-layout col-xs-12">
+          <app-top-cat-card [topCat]="topCat" *ngFor="let topCat of topCats | slice:5:6"></app-top-cat-card>        
+      </div>
+    </div>
+  </div>
+  <!-- /End - Top Categories this week -->
+   
+  <!-- Gadgets & Mobile Accessories -->
+  <div class="category-tab">
+    <h1 class="heading">Gadgets &amp; Mobile Accessories</h1>
+    <button type="button" class="btn toggle collapsed catb" data-toggle="collapse" data-target="#cat_tab"></button>
+    <!--category-tab-->
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 home-cat collapse footer-collapse" id="cat_tab">
+          <ul class="nav nav-tabs">
+            <li class="active webTab"><a href="#tab-1" data-toggle="tab">{{gadgets[0].subcatName}}</a></li>
+            <li class="webTab"><a href="#tab-2" data-toggle="tab">{{gadgets[1].subcatName}}</a></li>
+            <li class="webTab"><a href="#tab-3" data-toggle="tab">{{gadgets[2].subcatName}}</a></li>
+            <li class="webTab"><a href="#tab-4" data-toggle="tab">{{gadgets[3].subcatName}}</a></li>
+            <li class="webTab"><a href="#tab-5" data-toggle="tab">{{gadgets[4].subcatName}}</a></li>
+            <li class="webTab"><a href="#tab-6" data-toggle="tab">{{gadgets[5].subcatName}}</a></li>
+            <li class="webTab"><a href="#tab-7" data-toggle="tab">{{gadgets[5].subcatName}}</a></li>
+            <li class="webTab"><a href="#tab-8" data-toggle="tab">{{gadgets[6].subcatName}}</a></li>
+          </ul>
+      </div>
+
+      <div class="tab-content col-lg-9 col-md-8 col-sm-6 col-xs-12">
+        <div class="tab-pane fade active in row" id="tab-1">
+          <div id="cattab" class="owl-theme owl-carousel">
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/25-280x280.jpg" alt="Apple Cinema 30&quot;" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">Apple Cinema 30&quot;</a></h4>
+  
+                  <div class="price">
+                    <span class="price-new">N110.00</span> <span class="price-old">N122.00</span>
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('42');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('42');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('42');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/15-280x280.jpg" alt="iPod Classic" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">iPod Classic</a></h4>
+  
+                  <div class="price">
+                    <span class="price-new">N32.00</span> <span class="price-old">N122.00</span>
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('48');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('48');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('48');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/8-280x280.jpg" alt="iPod Nano" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">iPod Nano</a></h4>
+  
+                  <div class="price">
+                    <span class="price-new">N38.00</span> <span class="price-old">N122.00</span>
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('36');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('36');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('36');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/20-280x280.jpg" alt="Palm Treo Pro" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">Palm Treo Pro</a></h4>
+  
+                  <div class="price">
+                    N337.99
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('29');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('29');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('29');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/2-280x280.jpg" alt="Samsung SyncMaster 941BW" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">Samsung SyncMaster 941BW</a></h4>
+  
+                  <div class="price">
+                    N242.00
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('33');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('33');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('33');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/13-280x280.jpg" alt="Sony VAIO" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">Sony VAIO</a></h4>
+  
+                  <div class="price">
+                    N1,202.00
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('46');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('46');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('46');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade row" id="tab-2">
+          <div id="cattab" class="owl-theme owl-carousel">
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/30-280x280.jpg" alt="iMac" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">iMac</a></h4>
+  
+                  <div class="price">
+                    <span class="price-new">N38.00</span> <span class="price-old">N122.00</span>
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('41');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('41');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('41');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade row" id="tab-3">
+          <div id="cattab" class="owl-theme owl-carousel">
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/28-280x280.jpg" alt="HP LP3065" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">HP LP3065</a></h4>
+  
+                  <div class="price">
+                    <span class="price-new">N62.00</span> <span class="price-old">N122.00</span>
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('47');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('47');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('47');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/4-280x280.jpg" alt="Product 8" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">Product 8</a></h4>
+  
+                  <div class="price">
+                    N122.00
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('35');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('35');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('35');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade row" id="tab-4">
+          <div id="cattab" class="owl-theme owl-carousel">
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/25-280x280.jpg" alt="Apple Cinema 30&quot;" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">Apple Cinema 30&quot;</a></h4>
+  
+                  <div class="price">
+                    <span class="price-new">N110.00</span> <span class="price-old">N122.00</span>
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('42');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('42');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('42');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/24-280x280.jpg" alt="Canon EOS 5D" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">Canon EOS 5D</a></h4>
+  
+                  <div class="price">
+                    <span class="price-new">N98.00</span> <span class="price-old">N122.00</span>
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('30');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('30');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('30');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/28-280x280.jpg" alt="HP LP3065" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">HP LP3065</a></h4>
+  
+                  <div class="price">
+                    <span class="price-new">N62.00</span> <span class="price-old">N122.00</span>
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('47');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('47');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('47');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/27-280x280.jpg" alt="HTC Touch HD" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">HTC Touch HD</a></h4>
+  
+                  <div class="price">
+                    <span class="price-new">N32.00</span> <span class="price-old">N122.00</span>
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('28');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('28');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('28');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/30-280x280.jpg" alt="iMac" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">iMac</a></h4>
+  
+                  <div class="price">
+                    <span class="price-new">N38.00</span> <span class="price-old">N122.00</span>
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('41');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('41');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('41');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/21-280x280.jpg" alt="iPhone" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">iPhone</a></h4>
+  
+                  <div class="price">
+                    <span class="price-new">N18.80</span> <span class="price-old">N123.20</span>
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('40');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('40');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('40');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/15-280x280.jpg" alt="iPod Classic" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">iPod Classic</a></h4>
+  
+                  <div class="price">
+                    <span class="price-new">N32.00</span> <span class="price-old">N122.00</span>
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('48');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('48');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('48');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/17-280x280.jpg" alt="MacBook" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">MacBook</a></h4>
+  
+                  <div class="price">
+                    N602.00
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('43');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('43');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('43');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/18-280x280.jpg" alt="MacBook Air" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">MacBook Air</a></h4>
+  
+                  <div class="price">
+                    N1,202.00
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('44');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('44');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('44');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/20-280x280.jpg" alt="Palm Treo Pro" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">Palm Treo Pro</a></h4>
+  
+                  <div class="price">
+                    N337.99
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('29');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('29');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('29');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/4-280x280.jpg" alt="Product 8" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">Product 8</a></h4>
+  
+                  <div class="price">
+                    N122.00
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('35');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('35');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('35');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/2-280x280.jpg" alt="Samsung SyncMaster 941BW" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">Samsung SyncMaster 941BW</a></h4>
+  
+                  <div class="price">
+                    N242.00
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('33');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('33');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('33');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/13-280x280.jpg" alt="Sony VAIO" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">Sony VAIO</a></h4>
+  
+                  <div class="price">
+                    N1,202.00
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('46');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('46');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('46');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade row" id="tab-5">
+          <div id="cattab" class="owl-theme owl-carousel">
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/28-280x280.jpg" alt="HP LP3065" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">HP LP3065</a></h4>
+  
+                  <div class="price">
+                    <span class="price-new">N62.00</span> <span class="price-old">N122.00</span>
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('47');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('47');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('47');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/30-280x280.jpg" alt="iMac" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">iMac</a></h4>
+  
+                  <div class="price">
+                    <span class="price-new">N38.00</span> <span class="price-old">N122.00</span>
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('41');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('41');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('41');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/17-280x280.jpg" alt="MacBook" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">MacBook</a></h4>
+  
+                  <div class="price">
+                    N602.00
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('43');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('43');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('43');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/18-280x280.jpg" alt="MacBook Air" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">MacBook Air</a></h4>
+  
+                  <div class="price">
+                    N1,202.00
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('44');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('44');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('44');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/26-280x280.jpg" alt="MacBook Pro" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">MacBook Pro</a></h4>
+  
+                  <div class="price">
+                    N2,000.00
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('45');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('45');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('45');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/13-280x280.jpg" alt="Sony VAIO" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">Sony VAIO</a></h4>
+  
+                  <div class="price">
+                    N1,202.00
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('46');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('46');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('46');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade row" id="tab-6">
+          <div id="cattab" class="owl-theme owl-carousel">
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/25-280x280.jpg" alt="Apple Cinema 30&quot;" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">Apple Cinema 30&quot;</a></h4>
+  
+                  <div class="price">
+                    <span class="price-new">N110.00</span> <span class="price-old">N122.00</span>
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('42');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('42');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('42');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/28-280x280.jpg" alt="HP LP3065" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">HP LP3065</a></h4>
+  
+                  <div class="price">
+                    <span class="price-new">N62.00</span> <span class="price-old">N122.00</span>
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('47');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('47');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('47');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/27-280x280.jpg" alt="HTC Touch HD" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">HTC Touch HD</a></h4>
+  
+                  <div class="price">
+                    <span class="price-new">N32.00</span> <span class="price-old">N122.00</span>
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('28');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('28');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('28');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/30-280x280.jpg" alt="iMac" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">iMac</a></h4>
+  
+                  <div class="price">
+                    <span class="price-new">N38.00</span> <span class="price-old">N122.00</span>
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('41');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('41');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('41');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/15-280x280.jpg" alt="iPod Classic" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">iPod Classic</a></h4>
+  
+                  <div class="price">
+                    <span class="price-new">N32.00</span> <span class="price-old">N122.00</span>
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('48');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('48');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('48');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/8-280x280.jpg" alt="iPod Nano" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">iPod Nano</a></h4>
+  
+                  <div class="price">
+                    <span class="price-new">N38.00</span> <span class="price-old">N122.00</span>
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('36');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('36');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('36');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/20-280x280.jpg" alt="Palm Treo Pro" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">Palm Treo Pro</a></h4>
+  
+                  <div class="price">
+                    N337.99
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('29');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('29');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('29');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/4-280x280.jpg" alt="Product 8" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">Product 8</a></h4>
+  
+                  <div class="price">
+                    N122.00
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('35');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('35');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('35');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/2-280x280.jpg" alt="Samsung SyncMaster 941BW" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">Samsung SyncMaster 941BW</a></h4>
+  
+                  <div class="price">
+                    N242.00
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('33');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('33');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('33');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/13-280x280.jpg" alt="Sony VAIO" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">Sony VAIO</a></h4>
+  
+                  <div class="price">
+                    N1,202.00
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('46');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('46');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('46');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade row" id="tab-7">
+          <div id="cattab" class="owl-theme owl-carousel">
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/6-280x280.jpg" alt="iPod Shuffle" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">iPod Shuffle</a></h4>
+  
+                  <div class="price">
+                    <span class="price-new">N20.00</span> <span class="price-old">N122.00</span>
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('34');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('34');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('34');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/26-280x280.jpg" alt="MacBook Pro" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">MacBook Pro</a></h4>
+  
+                  <div class="price">
+                    N2,000.00
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('45');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('45');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('45');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade row" id="tab-8">
+          <div id="cattab" class="owl-theme owl-carousel">
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/6-280x280.jpg" alt="iPod Shuffle" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">iPod Shuffle</a></h4>
+  
+                  <div class="price">
+                    <span class="price-new">N20.00</span> <span class="price-old">N122.00</span>
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('34');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('34');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('34');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout col-xs-12">
+              <div class="product-thumb transition">
+                <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/26-280x280.jpg" alt="MacBook Pro" class="center-block img-responsive" /></a></div>
+                <div class="caption">
+                  <h4><a href="#">MacBook Pro</a></h4>
+  
+                  <div class="price">
+                    N2,000.00
+                  </div>
+                  <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  </div>
+  
+                  <div class="button-group">
+                    <button type="button" data-toggle="tooltip" onclick="cart.add('45');" class="bcart"><span>Add to Cart</span></button>
+                    <button type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('45');" class="bwish pull-right"><svg width="18px" height="17px"><use xlink:href="#heart" /></svg></button>
+                    <button type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('45');" class="bcom pull-right"><svg width="18px" height="17px"><use xlink:href="#compare"/></svg></button>
+                    <div class="bquickv pull-right" title="Quickview" data-toggle="tooltip"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!--/category-tab-->
+  <!--/End Gadgets & Mobile Accessories -->
+  
+  <!-- Recently View Products -->
+  <div class="bestsell">
+    <h3 class="heading">Recently View Products</h3>
+  
+    <div class="row">
+      <div id="special" class="owl-theme owl-carousel">
+        <div class="multi-row">
+          <!-- writ code Here -->
+          <div class="lproduct-layout col-xs-12">
+            <div class="product-thumb">
+              <div class="image col-sm-3 col-xs-4"><a href="#"><img src="assets/image/cache/catalog/product/25-280x280.jpg" alt="Apple Cinema 30&quot;" title="Apple Cinema 30&quot;" class="img-responsive center-block" /></a>
+                <!-- Webiarch Images Start -->
+                <a href="#"><img src="assets/image/cache/catalog/product/26-280x280.jpg" class="img-responsive second-img" alt="hover image"/></a>
+                <!-- Webiarch Images End -->
+                <!--                           <h3 class="sale">sale</h3>
+                         -->
+              </div>
+              <div class="caption col-sm-9 col-xs-8">
+                <h4><a href="#">Apple Cinema 30&quot;</a></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu velit libero. Aenean ut velit at odio
+                  dictum vestibulum qui..</p>
+  
+                <div class="price pull-left">
+                  <span class="price-new">N110.00</span> <span class="price-old">N122.00</span>
+                </div>
+                <div class="rating text-right"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+          <!-- writ code Here End -->
+  
+          <!-- writ code Here -->
+          <div class="lproduct-layout col-xs-12">
+            <div class="product-thumb">
+              <div class="image col-sm-3 col-xs-4"><a href="#"><img src="assets/image/cache/catalog/product/24-280x280.jpg" alt="Canon EOS 5D" title="Canon EOS 5D" class="img-responsive center-block" /></a>
+                <!-- Webiarch Images Start -->
+                <a href="#"><img src="assets/image/cache/catalog/product/15-280x280.jpg" class="img-responsive second-img" alt="hover image"/></a>
+                <!-- Webiarch Images End -->
+                <!--                           <h3 class="sale">sale</h3>
+                         -->
+              </div>
+              <div class="caption col-sm-9 col-xs-8">
+                <h4><a href="#">Canon EOS 5D</a></h4>
+                <p>Canon's press material for the EOS 5D states that it 'defines (a) new D-SLR category', while we're not typically
+                  too concerned wit..</p>
+  
+                <div class="price pull-left">
+                  <span class="price-new">N98.00</span> <span class="price-old">N122.00</span>
+                </div>
+                <div class="rating text-right"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+          <!-- writ code Here End -->
+        </div>
+  
+        <div class="multi-row">
+          <!-- writ code Here -->
+          <div class="lproduct-layout col-xs-12">
+            <div class="product-thumb">
+              <div class="image col-sm-3 col-xs-4"><a href="#"><img src="assets/image/cache/catalog/product/28-280x280.jpg" alt="HP LP3065" title="HP LP3065" class="img-responsive center-block" /></a>
+                <!-- Webiarch Images Start -->
+                <a href="#"><img src="assets/image/cache/catalog/product/29-280x280.jpg" class="img-responsive second-img" alt="hover image"/></a>
+                <!-- Webiarch Images End -->
+                <!--                           <h3 class="sale">sale</h3>
+                         -->
+              </div>
+              <div class="caption col-sm-9 col-xs-8">
+                <h4><a href="#">HP LP3065</a></h4>
+                <p>Stop your co-workers in their tracks with the stunning new 30-inch diagonal HP LP3065 Flat Panel Monitor. This
+                  flagship monitor fe..</p>
+  
+                <div class="price pull-left">
+                  <span class="price-new">N62.00</span> <span class="price-old">N122.00</span>
+                </div>
+                <div class="rating text-right"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+          <!-- writ code Here End -->
+  
+          <!-- writ code Here -->
+          <div class="lproduct-layout col-xs-12">
+            <div class="product-thumb">
+              <div class="image col-sm-3 col-xs-4"><a href="#"><img src="assets/image/cache/catalog/product/27-280x280.jpg" alt="HTC Touch HD" title="HTC Touch HD" class="img-responsive center-block" /></a>
+                <!-- Webiarch Images Start -->
+                <a href="#"><img src="assets/image/cache/catalog/product/30-280x280.jpg" class="img-responsive second-img" alt="hover image"/></a>
+                <!-- Webiarch Images End -->
+                <!--                           <h3 class="sale">sale</h3>
+                         -->
+              </div>
+              <div class="caption col-sm-9 col-xs-8">
+                <h4><a href="#">HTC Touch HD</a></h4>
+                <p>HTC Touch - in High Definition. Watch music videos and streaming content in awe-inspiring high definition clarity
+                  for a mobile exp..</p>
+  
+                <div class="price pull-left">
+                  <span class="price-new">N32.00</span> <span class="price-old">N122.00</span>
+                </div>
+                <div class="rating text-right"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+          <!-- writ code Here End -->
+        </div>
+  
+        <div class="multi-row">
+          <!-- writ code Here -->
+          <div class="lproduct-layout col-xs-12">
+            <div class="product-thumb">
+              <div class="image col-sm-3 col-xs-4"><a href="#"><img src="assets/image/cache/catalog/product/30-280x280.jpg" alt="iMac" title="iMac" class="img-responsive center-block" /></a>
+                <!-- Webiarch Images Start -->
+                <a href="#"><img src="assets/image/cache/catalog/product/27-280x280.jpg" class="img-responsive second-img" alt="hover image"/></a>
+                <!-- Webiarch Images End -->
+                <!--                           <h3 class="sale">sale</h3>
+                         -->
+              </div>
+              <div class="caption col-sm-9 col-xs-8">
+                <h4><a href="#">iMac</a></h4>
+                <p>Just when you thought iMac had everything, now there´s even more. More powerful Intel Core 2 Duo processors.
+                  And more memory stand..</p>
+  
+                <div class="price pull-left">
+                  <span class="price-new">N38.00</span> <span class="price-old">N122.00</span>
+                </div>
+                <div class="rating text-right"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+          <!-- writ code Here End -->
+  
+          <!-- writ code Here -->
+          <div class="lproduct-layout col-xs-12">
+            <div class="product-thumb">
+              <div class="image col-sm-3 col-xs-4"><a href="#"><img src="assets/image/cache/catalog/product/21-280x280.jpg" alt="iPhone" title="iPhone" class="img-responsive center-block" /></a>
+                <!-- Webiarch Images Start -->
+                <a href="#"><img src="assets/image/cache/catalog/product/22-280x280.jpg" class="img-responsive second-img" alt="hover image"/></a>
+                <!-- Webiarch Images End -->
+                <!--                           <h3 class="sale">sale</h3>
+                         -->
+              </div>
+              <div class="caption col-sm-9 col-xs-8">
+                <h4><a href="#">iPhone</a></h4>
+                <p>iPhone is a revolutionary new mobile phone that allows you to make a call by simply tapping a name or number
+                  in your address book,..</p>
+  
+                <div class="price pull-left">
+                  <span class="price-new">N18.80</span> <span class="price-old">N123.20</span>
+                </div>
+                <div class="rating text-right"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+          <!-- writ code Here End -->
+        </div>
+  
+        <div class="multi-row">
+          <!-- writ code Here -->
+          <div class="lproduct-layout col-xs-12">
+            <div class="product-thumb">
+              <div class="image col-sm-3 col-xs-4"><a href="#"><img src="assets/image/cache/catalog/product/15-280x280.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive center-block" /></a>
+                <!-- Webiarch Images Start -->
+                <a href="#"><img src="assets/image/cache/catalog/product/16-280x280.jpg" class="img-responsive second-img" alt="hover image"/></a>
+                <!-- Webiarch Images End -->
+                <!--                           <h3 class="sale">sale</h3>
+                         -->
+              </div>
+              <div class="caption col-sm-9 col-xs-8">
+                <h4><a href="#">iPod Classic</a></h4>
+                <p>More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets
+                  you enjoy u..</p>
+  
+                <div class="price pull-left">
+                  <span class="price-new">N32.00</span> <span class="price-old">N122.00</span>
+                </div>
+                <div class="rating text-right"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+          <!-- writ code Here End -->
+  
+          <!-- writ code Here -->
+          <div class="lproduct-layout col-xs-12">
+            <div class="product-thumb">
+              <div class="image col-sm-3 col-xs-4"><a href="#"><img src="assets/image/cache/catalog/product/8-280x280.jpg" alt="iPod Nano" title="iPod Nano" class="img-responsive center-block" /></a>
+                <!-- Webiarch Images Start -->
+                <a href="#"><img src="assets/image/cache/catalog/product/13-280x280.jpg" class="img-responsive second-img" alt="hover image"/></a>
+                <!-- Webiarch Images End -->
+              </div>
+              <div class="caption col-sm-9 col-xs-8">
+                <h4><a href="#">iPod Nano</a></h4>
+                <p>Video in your pocket. Its the small iPod with one very big idea: video. The worlds most popular music player
+                  now lets you en..</p>
+  
+                <div class="price pull-left">
+                  <span class="price-new">N38.00</span> <span class="price-old">N122.00</span>
+                </div>
+                <div class="rating text-right"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+          <!-- writ code Here End -->
+        </div>
+  
+        <div class="multi-row">
+          <!-- writ code Here -->
+          <div class="lproduct-layout col-xs-12">
+            <div class="product-thumb">
+              <div class="image col-sm-3 col-xs-4"><a href="#"><img src="assets/image/cache/catalog/product/6-280x280.jpg" alt="iPod Shuffle" title="iPod Shuffle" class="img-responsive center-block" /></a>
+                <!-- Webiarch Images Start -->
+                <a href="#"><img src="assets/image/cache/catalog/product/4-280x280.jpg" class="img-responsive second-img" alt="hover image"/></a>
+                <!-- Webiarch Images End -->
+                <!--                           <h3 class="sale">sale</h3>
+                         -->
+              </div>
+              <div class="caption col-sm-9 col-xs-8">
+                <h4><a href="#">iPod Shuffle</a></h4>
+                <p>Born to be worn. Clip on the worlds most wearable music player and take up to 240 songs with you anywhere.
+                  Choose from five ..</p>
+  
+                <div class="price pull-left">
+                  <span class="price-new">N20.00</span> <span class="price-old">N122.00</span>
+                </div>
+                <div class="rating text-right"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+          <!-- writ code Here End -->
+  
+          <!-- <h1>hii</h1> -->
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  <!--/End Recently View Products -->
+  
+  <!-- Newsletter Message -->
+  <div class="webi-newsletter  webi-newsletter hide" id="newsletter_5b3f6107e5cd2" data-mode="popup">
+    <form id="formNewLestter" method="post" action="#" class="formNewLestter  white-popup newsletter-bg news-popup" style="background-image: url('image/catalog/newsletter/popup.jpg')">
+      <div class="inner">
+        <div class="description-top">
+          <p>
+            <h2>subscribe newsletter</h2>
+            <p>Subscribe our newsletters now and stay up-to-date with new collections, the latest updates and exclusive offers.
+            </p>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control input-md inputNew" onblur="javascript:if(this.value=='')this.value='Your email address';"
+            onfocus="javascript:if(this.value=='Your email address')this.value='';" value="Your email address" size="18" name="email">
+        </div>
+        <div class="button-submit">
+          <button type="submit" name="submitNewsletter" class="btn btn-primary">Subscribe</button>
+        </div>
+        <input type="hidden" value="1" name="action">
+        <div class="valid"></div>
+        <div class="description-bottom">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="checkbox">
+          <label><input type="checkbox" checked="false"> Close &amp; Don't show this again!!! </label>
+        </div>
+      </div>
+    </form>
+  </div>
+  <!--/End Newsletter Message -->

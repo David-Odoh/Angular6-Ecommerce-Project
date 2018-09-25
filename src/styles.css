@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+/* @import "assets/catalog/view/javascript/bootstrap/css/bootstrap.min.css";
+@import "assets/catalog/view/javascript/font-awesome/css/font-awesome.min.css";
+@import "http://fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700";
+@import "assets/catalog/view/theme/techeco/stylesheet/stylesheet.css";
+
+@import "/assets/catalog/view/javascript/jquery/swiper/css/swiper.min.css";
+
+@import "/assets/catalog/view/javascript/jquery/swiper/css/opencart.css";
+
+@import "/assets/catalog/view/javascript/jquery/swiper/css/owl.carousel.css";
+
+@import "/assets/catalog/view/javascript/jquery/swiper/css/owl.theme.css";
+
+@import "/assets/catalog/view/javascript/jquery/magnific/magnific-popup.css";
+
+@import "/assets/catalog/view/theme/techeco/stylesheet/webinewsletter.css";
+
+@import "http://opencart.webiarch.com/OC0004/OCES02/";
+@import "assets/image/catalog/cart.png";
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css";
+
+@import "https://fonts.googleapis.com/icon?family=Material+Icons"; */
+
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus,
+div:focus {
+    outline: none;
+}

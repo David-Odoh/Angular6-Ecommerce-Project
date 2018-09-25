@@ -1,0 +1,97 @@
+<div [ngClass]="{'show-now' : loading }">
+  <div class="preload">
+    <div id="loading-center-absolute">
+      <div [ngClass]="{object : loading}"></div>
+    </div>
+  </div>
+</div>
+<div id="content" class="container">
+  <ul class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li><i class="fa fa-angle-right boxed-icon"></i><a href="#" class="breadcrumb-pill">Computers &amp; Tablets</a></li>
+    <span class="hidden-md hidden-sm hidden-xs">
+        <li><i class="fa fa-angle-right boxed-icon"></i><a href="#" class="breadcrumb-pill">Laptops</a></li>
+        <li><i class="fa fa-angle-right boxed-icon"></i><a href="#" class="breadcrumb-pill">Apple</a></li>
+        <li><i class="fa fa-angle-right boxed-icon"></i><a href="#" class="breadcrumb-pill">HP Intel Core 1TB HDD 4GB RAM 15"</a></li>
+      </span>
+  </ul>
+  <div class="th-wrapper">
+
+    <div class="sidebar-right">
+      <div class="sidebar-wrapper">
+        <div class="user">
+          <div class="user-img"><img src="./../../../assets/image/cache/catalog/storefront/Layer_3.png" alt=""></div>
+          <div class="id">
+            <span class="user-name">Ahmed Q.</span>
+            <span class="point">Points Earned: <strong>2,000</strong></span>
+          </div>
+        </div>
+        <div class="account-setup">
+          <div class="acc-set">
+            <span class="title">Account Setup</span>
+            <span class="percent">60%</span>
+          </div>
+          <div class="progressbar">
+            <span class="fa fa-stack">
+              <div id="progressbar">
+                <div></div>
+              </div>
+            </span>
+          </div>
+        </div>
+
+      </div>
+      <div class="setup-list">
+        <div class="profile in-use">My Profile</div>
+        <div class="address-book">My Address Book</div>
+        <div class="limit-increase">Request Limit Increase</div>
+        <div class="add-cooperative">Add New Cooperative</div>
+        <div class="change-password">Change Password</div>
+        <div class="trans-pin">Change Transaction Pin</div>
+        <div routerLink="/shop/history/orders" class="orders">My Orders</div>
+        <div routerLink="/shop/history/transactions" class="trans-hsitory">Transaction History</div>
+        <div class="logout">Logout</div>
+      </div>
+    </div>
+
+    <div class="dashboard">
+      <div class="metro">
+        <div class="total-order card">
+          <div class="img"><img src="./../../../assets/image/cache/catalog/storefront/shopping-bag.png" alt=""></div>
+          <span class="one"><strong>Total Orders</strong></span>
+          <span class="two">2323</span>
+          <span class="three">Manager Orders</span>
+        </div>
+        <div class="acc-bal card">
+          <div class="img">
+            <img src="./../../../assets/image/cache/catalog/storefront/wallet.png" alt="">
+          </div>
+          <span class="one"><strong>Acct Balance</strong></span>
+          <span class="two">2323</span>
+          <span class="three">Deposit Funds</span>
+        </div>
+        <div class="my-reviews card">
+          <div class="img">
+            <img src="./../../../assets/image/cache/catalog/storefront/thumbs-up.png" alt="">
+          </div>
+          <span class="one"><strong>My Reviews</strong></span>
+          <span class="two">2323</span>
+          <span class="three">Manager Reviews</span>
+        </div>
+        <div class="my-coupons card">
+          <div class="img">
+            <img src="./../../../assets/image/cache/catalog/storefront/voucher.png" alt="">
+          </div>
+          <span class="one"><strong>My Coupons</strong></span>
+          <span class="two">2323</span>
+          <span class="three">Use Coupons</span>
+        </div>
+      </div>
+
+      <router-outlet></router-outlet>
+      <!-- <app-my-orders></app-my-orders> -->
+      <!-- <app-transaction-table></app-transaction-table> -->
+
+    </div>
+  </div>
+</div>

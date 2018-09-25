@@ -1,0 +1,67 @@
+<body>
+  <div class="container">
+    <div class="wrapper animated bounceInLeft">
+
+      <div class="side_cover_banner">
+        <a href="#">
+                  <span class="cooper-logo"  style="color: #fff;">
+                    C<span style="color:#fe8f01;">OO</span>PER<span style="color:#fe8f01;"> S</span>WI<span style="color:#fe8f01">T</span>CH
+              </span>
+            </a>
+      </div>
+      <div class="login">
+        <div id="login_title">Login</div>
+        <form [formGroup]="loginForm" (submit)="login()">
+          <!-- Validation Message -->
+          <div *ngIf="(loginForm.controls['cooperId'].errors?.required && (loginForm.controls['cooperId'].touched || loginForm.controls['cooperId'].dirty))"
+            class="invalid animated bounceIn">
+            Required.
+          </div>
+          <div *ngIf="(loginForm.controls['cooperId'].errors?.minlength)" class="invalid animated bounceIn">
+            Minimum Length is 3.
+          </div>
+          <div *ngIf="(loginForm.controls['cooperId'].valid)" class="valid animated flash">
+            OK.
+          </div>
+          <!--/End Validation Message -->
+          <p>
+            <input type="text" formControlName="cooperId" class="Email_Adress" placeholder="Cooper ID" autocomplete="new-password" id="email">
+          </p>
+          <!-- Validation Message -->
+          <div *ngIf="(loginForm.controls['password'].errors?.required && (loginForm.controls['password'].touched || loginForm.controls['password'].dirty))"
+            class="invalid animated bounceIn">
+            Required.
+          </div>
+          <div *ngIf="(loginForm.controls['password'].errors?.minlength)" class="invalid animated bounceIn">
+            Minimum Length is 3.
+          </div>
+          <div *ngIf="(loginForm.controls['password'].valid)" class="valid animated flash">
+            OK.
+          </div>
+          <!--/End Validation Message -->
+          <p>
+            <input type="password" formControlName="password" class="Password" placeholder="Password" autocomplete="new-password" id="password">
+          </p>
+          <p>
+            <label class="myCheckbox">
+                <input type="checkbox" name="check" id="check"/> 
+                <span></span>
+                <label for="check" id="remember" for="check">Remember Me </label>
+            </label>
+          </p>
+          <p class="full">
+            <button type="submit" [disabled]="!loginForm.valid" class="login_btn" style="background-image: -moz-linear-gradient( -135deg, rgb(255,144,0) 0%, rgb(255,23,23) 100%) !important;
+                background-image: -webkit-linear-gradient( -135deg, rgb(255,144,0) 0%, rgb(255,23,23) 100%) !important;
+                background-image: -ms-linear-gradient( -135deg, rgb(255,144,0) 0%, rgb(255,23,23) 100%) !important;">
+              Login
+            </button>
+          </p>
+          <p class="footer_links">
+            <a routerLink="/kyc/forgot-password"><span class="forgot">Forgot password?</span></a>
+            <a routerLink="/kyc/register"><span class="account">Don't have an account?</span></a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>

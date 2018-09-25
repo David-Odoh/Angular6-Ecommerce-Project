@@ -1,0 +1,23 @@
+<app-cookie-alert></app-cookie-alert>
+
+<app-navbar></app-navbar>
+
+<app-mobile-menu></app-mobile-menu>
+
+<!-- Page busy/loading Icon -->
+<div [ngClass]="{'show-now' : loading }">
+  <div class="preload">
+    <div id="loading-center-absolute">
+      <div [ngClass]="{object : loading}"></div>
+    </div>
+  </div>
+</div>
+
+<!-- <app-home></app-home> -->
+<router-outlet></router-outlet>
+
+<app-footer></app-footer>
+
+<a id="scroll" title="Scroll to Top" style="display: block;">
+    <i class="fa fa-angle-up"></i>
+</a>

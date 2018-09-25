@@ -1,0 +1,76 @@
+<div id="content" class="container">
+  <ul class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li><i class="fa fa-angle-right boxed-icon"></i><a href="#" class="breadcrumb-pill">Computers &amp; Tablets</a></li>
+    <span class="hidden-md hidden-sm hidden-xs">
+      <li><i class="fa fa-angle-right boxed-icon"></i><a href="#" class="breadcrumb-pill">Laptops</a></li>
+      <li><i class="fa fa-angle-right boxed-icon"></i><a href="#" class="breadcrumb-pill">Apple</a></li>
+      <li><i class="fa fa-angle-right boxed-icon"></i><a href="#" class="breadcrumb-pill">HP Intel Core 1TB HDD 4GB RAM 15"</a></li>
+    </span>
+  </ul>
+
+
+  <div class="scWrapper">
+    <div class="options-section">
+      <p class="desc1"><strong>Where would you like us to shi this order to?</strong></p>
+      <div class="options-top-border">
+        <app-shipping-options></app-shipping-options>
+      </div>
+
+      <p class="desc2"><strong>Select Cooperative</strong></p>
+      <div class="options-top-border">
+        <app-cooperatives></app-cooperatives>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <p class="back-to-shop">Back to Shop</p>
+      <div class="sidebar-container">
+        <div class="sidebar-wrapper">
+          <h3>Your Order</h3>
+          <div class="sidebar-top-borders">
+            <div class="breakdown">
+              <div class="subtotal">
+                <div class="key"><strong>Product</strong></div>
+                <div class="value"><strong>Total</strong></div>
+              </div>
+              <div class="shipping">
+                <div class="key">Item</div>
+                <div class="value">N20,000</div>
+              </div>
+              <div class="shipping">
+                <div class="key">Item</div>
+                <div class="value">N20,000</div>
+              </div>
+              <div class="shipping">
+                <div class="key">Item</div>
+                <div class="value">N20,000</div>
+              </div>
+              <div class="shipping">
+                <div class="key">Item</div>
+                <div class="value">N20,000</div>
+              </div>
+
+            </div>
+          </div>
+          <div class="sidebar-top-borders">
+            <div class="total">
+              <div class="key">Total</div>
+              <div class="value"><strong>N200,999</strong></div>
+            </div>
+            <div class="promo-code">
+              <label class="myCheckbox">
+                    <input type="checkbox" name="check" id="check"/> 
+                    <span></span>
+                    <label for="check" id="promo-code-msg" for="check">I have promo code </label>
+              </label>
+            </div>
+            <button routerLink="/shop/checkout" class="milk_btn button_base">Place Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- </div> -->

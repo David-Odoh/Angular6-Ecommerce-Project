@@ -1,0 +1,46 @@
+<body>
+  <div class="container">
+    <div class="wrapper animated bounceInLeft">
+
+      <div class="side_cover_banner">
+        <a href="#">
+              <span class="cooper-logo"  style="color: #fff;">
+                C<span style="color:#fe8f01;">OO</span>PER<span style="color:#fe8f01;"> S</span>WI<span style="color:#fe8f01">T</span>CH
+              </span>
+            </a>
+      </div>
+      <div class="phone_verification">
+        <div id="login_title">Phone Verification</div>
+        <form [formGroup]="verificationForm" (submit)="verification()">
+          <p>
+            <input type="text" formControlName="phone" class="phone" autocomplete="new-password" maxlength="10">
+          </p>
+          <!-- Validation Message -->
+          <div *ngIf="(verificationForm.controls['phone'].errors?.required && (verificationForm.controls['phone'].touched || verificationForm.controls['phone'].dirty))"
+            class="invalid animated bounceIn">
+            Required.
+          </div>
+          <div *ngIf="(verificationForm.controls['phone'].errors?.maxlength)" class="invalid animated bounceIn">
+            Number should be 10 digits only.
+          </div>
+          <div *ngIf="(verificationForm.controls['phone'].valid)" class="valid animated flash">
+            OK.
+          </div>
+          <!--/End Validation Message -->
+          <p>
+            <span class="info_span">
+              Please enter your phone number to receive your login credential via email
+            </span>
+          </p>
+          
+          <!--Navigate to this: routerLink="/kyc/otp" -->
+          <p class="full">
+            <button type="submit" [disabled]="!verificationForm.valid" style="background-image: -moz-linear-gradient( -135deg, rgb(255,144,0) 0%, rgb(255,23,23) 100%) !important;
+            background-image: -webkit-linear-gradient( -135deg, rgb(255,144,0) 0%, rgb(255,23,23) 100%) !important;
+            background-image: -ms-linear-gradient( -135deg, rgb(255,144,0) 0%, rgb(255,23,23) 100%) !important;">Complete Registration</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
